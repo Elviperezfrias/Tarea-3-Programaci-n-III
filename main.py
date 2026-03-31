@@ -459,11 +459,11 @@ def mostrar_sesion():
             'DATABASE=Emplex;'
             'Trusted_Connection=yes;'
         )
-        
+
         cursor = conexion.cursor()
-        consulta = "SELECT * FROM empresas WHERE correo = ? AND contrasena = ?"
+        consulta = "SELECT * FROM empresas WHERE correo = ? AND contrasena = ?" 
         cursor.execute(consulta, (email, clave))
-        resultado = cursor.fetchone()
+        resultado = cursor.fetchone() 
 
         if resultado:
             empresa_id = resultado[0]
