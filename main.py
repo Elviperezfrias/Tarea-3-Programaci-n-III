@@ -473,7 +473,7 @@ def mostrar_sesion():
             # Configurar columnas y filas de la ventana
             ventana.grid_rowconfigure(0, weight=1)      # La fila 0 ocupa todo el alto
             ventana.grid_columnconfigure(0, weight=0)   # Columna del menú, fija
-            ventana.grid_columnconfigure(1, weight=1)   # Columna del contenido, expansiva
+            ventana.grid_columnconfigure(1, weight=1)   
 
 
 
