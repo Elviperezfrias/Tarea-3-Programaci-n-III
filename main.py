@@ -464,6 +464,7 @@ def mostrar_sesion():
         consulta = "SELECT * FROM empresas WHERE correo = ? AND contrasena = ?" 
         cursor.execute(consulta, (email, clave))
         resultado = cursor.fetchone() 
+        
 
         if resultado:
             empresa_id = resultado[0]
@@ -482,6 +483,7 @@ def mostrar_sesion():
             # Frame izquierdo: menú lateral
             frame_botonera = CTkFrame(ventana, fg_color="#E0E9F4", width=200)
             frame_botonera.grid(row=0, column=0, sticky="nsw", padx=0, pady=0)
+
 
 
 
@@ -534,6 +536,7 @@ def mostrar_sesion():
             btn_buscar.pack(pady=10, fill="x", padx=10)
             
 
+
             btn_eliminar = CTkButton(frame_botonera, text="Eliminar Empleado",command=lambda: eliminar_empleado_en_frame(frame_contenido,empresa_id),
             fg_color="#0D73C0" , width=180)
             btn_eliminar.pack(pady=10, fill="x", padx=10)
@@ -546,6 +549,7 @@ def mostrar_sesion():
 
 
  
+
 
 
 
@@ -578,11 +582,12 @@ def mostrar_registro():
     frame_registro.grid(column=0, row=0, sticky="nsew", padx=50, pady=0)
 
 
+
     # Título del formulario
     etiqueta_registro = CTkLabel(
         frame_registro,
         text="Formulario de Registro",
-        font=("sans serif", 18, "bold"),
+        font=("sans serif", 17, "bold"),
         text_color="#00296F"
     )
     etiqueta_registro.pack(pady=10)
