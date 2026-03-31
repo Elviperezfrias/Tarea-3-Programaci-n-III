@@ -338,7 +338,7 @@ def buscar_empleado_en_frame(frame_contenido, empresa_id):
             conexion.close()
 
 # mejora en CRUD de empleados
-print("CRUD de empleados optimizado")
+
 
 def eliminar_empleado_en_frame(frame_contenido, empresa_id):
     ventana.geometry("1000x600+450+120")
@@ -380,6 +380,7 @@ def eliminar_empleado_en_frame(frame_contenido, empresa_id):
             id_empresa_empleado = resultado[0]
 
             # Verificar que el empleado pertenece a la misma empresa que el usuario
+            
             if id_empresa_empleado != empresa_id:
                 messagebox.showerror("Error", "Empleado no encontrado.")
                 return
