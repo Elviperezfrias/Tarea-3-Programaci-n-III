@@ -574,6 +574,7 @@ def mostrar_registro():
     ventana.geometry("1000x600+450+120")
     frame_registro = CTkFrame(ventana, fg_color="#F8F9FA")
     frame_registro.grid(column=0, row=0, sticky="nsew", padx=50, pady=0)
+    
 
     # Título del formulario
     etiqueta_registro = CTkLabel(
@@ -909,6 +910,7 @@ bt_regist.grid(row=6, column=0,pady=(2, 5))
 bt_restablecer_pass = CTkButton(
     frame_login,  
     font=('sans serif', 11),   # fuente un poco más chica
+
     width=140,                 # ancho del botón
     height=28,                 # alto del botón
     border_color="#0D6EFD",
