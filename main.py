@@ -91,7 +91,7 @@ def agregar_empleado_en_frame(frame_contenido, empresa_id):
     formulario.grid_columnconfigure(0, weight=1, uniform="a")
     formulario.grid_columnconfigure(1, weight=1, uniform="a")
 
-    # Función para crear campos
+    # Función para crear campos 1
     
     def campo(label_text, row, column):
         CTkLabel(formulario, text=label_text,text_color="#0A0A0A").grid(row=row, column=column, sticky="w", padx=14, pady=(10, 2))
@@ -139,7 +139,7 @@ def agregar_empleado_en_frame(frame_contenido, empresa_id):
             conexion.close()
             messagebox.showinfo("Éxito", "Empleado agregado correctamente.")
 
-            # Limpiar campos
+            # Limpiar campos 
             for entry in [entry_nombre, entry_apellido, entry_correo, entry_telefono, entry_puesto, entry_salario, entry_metodo_pago, entry_fecha_registro]:
                 entry.delete(0, 'end')
 
@@ -441,6 +441,7 @@ def calcular_total_pagos(frame_contenido, empresa_id):
 
 #def cambiar_contrasena_empresa(frame_login):
 
+# User authentication module
 #funcion de inicio
 def mostrar_sesion():
     email = correo.get()
@@ -472,7 +473,7 @@ def mostrar_sesion():
             # Configurar columnas y filas de la ventana
             ventana.grid_rowconfigure(0, weight=1)      # La fila 0 ocupa todo el alto
             ventana.grid_columnconfigure(0, weight=0)   # Columna del menú, fija
-            ventana.grid_columnconfigure(1, weight=1)   # Columna del contenido, expansiva
+            ventana.grid_columnconfigure(1, weight=1)   
 
 
 
