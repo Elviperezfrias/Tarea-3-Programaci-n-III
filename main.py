@@ -380,7 +380,7 @@ def eliminar_empleado_en_frame(frame_contenido, empresa_id):
             id_empresa_empleado = resultado[0]
 
             # Verificar que el empleado pertenece a la misma empresa que el usuario
-            
+
             if id_empresa_empleado != empresa_id:
                 messagebox.showerror("Error", "Empleado no encontrado.")
                 return
@@ -459,6 +459,7 @@ def mostrar_sesion():
             'DATABASE=Emplex;'
             'Trusted_Connection=yes;'
         )
+        
         cursor = conexion.cursor()
         consulta = "SELECT * FROM empresas WHERE correo = ? AND contrasena = ?"
         cursor.execute(consulta, (email, clave))
