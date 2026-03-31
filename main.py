@@ -296,6 +296,7 @@ def buscar_empleado_en_frame(frame_contenido, empresa_id):
             btn_actualizar = CTkButton(frame_contenido, fg_color="#1170DD", text="Actualizar seleccionado", command=actualizar_seleccionado)
             btn_actualizar.pack(pady=10)
 
+# Employee CRUD functionality
 
             # --- Botón para exportar a Excel ---
             def exportar_excel():
@@ -312,7 +313,7 @@ def buscar_empleado_en_frame(frame_contenido, empresa_id):
                     # Escribir encabezados
                     ws.append(columnas)
 
-                    # Escribir filas de empleados como listas
+                    # Escribir filas de empleados 
                     for emp in empleados:
                         ws.append(list(emp))
 
