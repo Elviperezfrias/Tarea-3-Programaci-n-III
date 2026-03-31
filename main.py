@@ -574,7 +574,7 @@ def mostrar_registro():
     ventana.geometry("1000x600+450+120")
     frame_registro = CTkFrame(ventana, fg_color="#F8F9FA")
     frame_registro.grid(column=0, row=0, sticky="nsew", padx=50, pady=0)
-    
+
 
     # Título del formulario
     etiqueta_registro = CTkLabel(
@@ -610,6 +610,7 @@ def mostrar_registro():
         height=40
     )
     entry_direccion.pack(pady=6)
+    
 
     # Campo: Correo electrónico
     entry_correo = CTkEntry(
